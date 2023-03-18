@@ -1,0 +1,26 @@
+ .timer {
+     display: flex;
+ }
+
+ .field {
+     text-align: center;
+     font-size: 18px;
+     line-height: 1.5;
+     display: block;
+ }
+
+ .value {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: yellow;
+     margin: 5px;
+     padding: 5px;
+     background-color: rgb(13, 48, 220);
+     border-top: solid 1 px rgb(236, 65, 13);
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 3em;
+     line-height: 1;
+     border-radius: 10px;
+ }
