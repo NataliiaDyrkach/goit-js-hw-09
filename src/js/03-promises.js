@@ -12,8 +12,7 @@ function onButtonSubmit(evt) {
   let amount = Number(evt.currentTarget.amount.value);
 
   for (let position = 1; position <= amount; position++) {
-    delay += step;
-    createPromise(position, delay)
+       createPromise(position, delay)
       .then(({ position, delay }) => {
         setTimeout(() => {
           Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`, { useIcon: false });
@@ -24,6 +23,7 @@ function onButtonSubmit(evt) {
           Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`, { useIcon: false });
         }, delay);
       });
+     delay += step;
   }
 }
 
